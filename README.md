@@ -54,6 +54,29 @@ tvm-reporter/
 
 ---
 
+## Quick Start
+
+Get started in 3 easy steps:
+
+```bash
+# 1. Navigate to the project
+cd tvm-reporter
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch web interface
+streamlit run web_app.py
+```
+
+**Or use the launcher scripts:**
+- **Linux/Mac**: `./start_web.sh`
+- **Windows**: Double-click `start_web.bat`
+
+Then upload your CSV files through the web browser and click "Process Reports"!
+
+---
+
 ## Installation
 
 ### 1. Clone or download this project
@@ -67,6 +90,12 @@ pip install -r requirements.txt
 
 ### 3. Verify installation:
 
+**Web Interface:**
+```bash
+streamlit run web_app.py
+```
+
+**Command Line:**
 ```bash
 python app.py --help
 ```
@@ -75,7 +104,31 @@ python app.py --help
 
 ## Usage
 
-### Basic Usage
+### Web Interface (Recommended)
+
+The easiest way to use TVM Reporter is through the web interface:
+
+```bash
+cd tvm-reporter
+streamlit run web_app.py
+```
+
+This will open a web browser where you can:
+- Upload CSV files via drag-and-drop
+- Configure processing options with checkboxes
+- View real-time progress
+- Download all reports as a ZIP file
+- See summary statistics immediately
+
+**No command line arguments needed!**
+
+---
+
+### Command Line Interface
+
+For automation and scripting, use the CLI:
+
+#### Basic Usage
 
 ```bash
 python app.py \

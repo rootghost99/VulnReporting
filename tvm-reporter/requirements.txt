@@ -8,3 +8,6 @@ PyYAML>=5.4.0
 
 # PDF generation
 reportlab>=3.6.0
+
+# Web interface
+streamlit>=1.28.0
