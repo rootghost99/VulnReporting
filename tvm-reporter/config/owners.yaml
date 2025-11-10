@@ -1,0 +1,78 @@
+# TVM Reporter Owner Mappings
+
+# Default owner for unmatched products/vendors
+default_owner: "Security Team"
+
+# Pattern-based owner routing rules
+# Matches are case-insensitive and use substring matching
+patterns:
+  - product_pattern: "windows"
+    vendor_pattern: "microsoft"
+    owner: "Windows Infrastructure Team"
+
+  - product_pattern: "office"
+    vendor_pattern: "microsoft"
+    owner: "Office Applications Team"
+
+  - product_pattern: "chrome"
+    vendor_pattern: "google"
+    owner: "Browser Security Team"
+
+  - product_pattern: "firefox"
+    vendor_pattern: "mozilla"
+    owner: "Browser Security Team"
+
+  - product_pattern: "java"
+    vendor_pattern: "oracle"
+    owner: "Java Platform Team"
+
+  - product_pattern: "python"
+    vendor_pattern: ""
+    owner: "Development Tools Team"
+
+  - product_pattern: "docker"
+    vendor_pattern: ""
+    owner: "Container Platform Team"
+
+  - product_pattern: "kubernetes"
+    vendor_pattern: ""
+    owner: "Container Platform Team"
+
+  - product_pattern: "apache"
+    vendor_pattern: ""
+    owner: "Web Infrastructure Team"
+
+  - product_pattern: "nginx"
+    vendor_pattern: ""
+    owner: "Web Infrastructure Team"
+
+  - product_pattern: "sql"
+    vendor_pattern: ""
+    owner: "Database Team"
+
+  - product_pattern: "mysql"
+    vendor_pattern: ""
+    owner: "Database Team"
+
+  - product_pattern: "postgresql"
+    vendor_pattern: ""
+    owner: "Database Team"
+
+  - product_pattern: "linux"
+    vendor_pattern: ""
+    owner: "Linux Infrastructure Team"
+
+  - product_pattern: "ubuntu"
+    vendor_pattern: ""
+    owner: "Linux Infrastructure Team"
+
+  - product_pattern: "red hat"
+    vendor_pattern: ""
+    owner: "Linux Infrastructure Team"
+
+# Explicit owner assignments by product name (exact match, case-insensitive)
+explicit_mappings:
+  "Adobe Acrobat Reader": "Document Management Team"
+  "Zoom": "Collaboration Tools Team"
+  "Slack": "Collaboration Tools Team"
+  "Visual Studio Code": "Development Tools Team"

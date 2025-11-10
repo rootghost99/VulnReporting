@@ -1,0 +1,10 @@
+# TVM Reporter Dependencies
+
+# Data processing
+pandas>=1.3.0
+
+# YAML configuration
+PyYAML>=5.4.0
+
+# PDF generation
+reportlab>=3.6.0

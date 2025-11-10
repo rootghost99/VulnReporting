@@ -1,0 +1,60 @@
+# TVM Reporter Configuration
+
+# Report metadata
+report:
+  title: "TVM Vulnerability Report"
+  organization: "Security Operations"
+  top_n: 10  # Number of items in top lists
+
+# SLA days per severity level
+sla_days:
+  critical: 7
+  high: 30
+  medium: 90
+  low: 180
+
+# Exposure bucket boundaries
+exposure_buckets:
+  very_high: 80
+  high: 60
+  medium: 30
+  low: 1
+
+# Severity scoring
+severity_scoring:
+  critical_threshold: 9.0
+  high_threshold: 7.0
+  medium_threshold: 4.0
+
+# Header override mappings (optional custom mappings)
+header_mappings:
+  vulnerabilities: {}
+  recommendations: {}
+  software: {}
+  events: {}
+
+# Exclusion rules
+exclusions:
+  # CVEs to exclude from reporting
+  excluded_cves: []
+
+  # Devices to exclude from reporting
+  excluded_devices: []
+
+  # Products to exclude
+  excluded_products: []
+
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+
+# Date filters
+date_filters:
+  # Only include vulnerabilities detected after this date (YYYY-MM-DD)
+  # Leave empty to include all
+  since_date: ""
+
+# Profile mode settings
+profile:
+  enabled: false
+  sample_size: 1000  # Number of rows to sample in profile mode
