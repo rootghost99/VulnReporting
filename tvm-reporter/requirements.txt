@@ -9,5 +9,11 @@ PyYAML>=5.4.0
 # PDF generation
 reportlab>=3.6.0
 
-# Web interface
+# Web interface (Streamlit)
 streamlit>=1.28.0
+
+# Desktop application (Eel)
+eel>=0.16.0
+
+# Build tools (for creating executable)
+pyinstaller>=6.0.0
